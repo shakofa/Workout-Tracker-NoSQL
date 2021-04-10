@@ -1,4 +1,4 @@
-const router = require('express').router();
+const router = require('express');
 const workout = require('../models/workout.js');
 
 
@@ -33,7 +33,7 @@ router.get('/api/workouts/range', (req, res) => {
         },
     ])
     .sort({_id: -1}).limit(7).then((dbWorkouts) => {
-        cons.log(dbWorkouts);
+        console.log(dbWorkouts);
         res.json(dbWorkouts)
       }).catch((err) => {res.json(err); });
 
@@ -51,4 +51,4 @@ router.get('/api/workouts/range', (req, res) => {
       
       module.exports = router;
       
-})
+});

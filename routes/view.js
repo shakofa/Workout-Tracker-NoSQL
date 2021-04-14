@@ -13,3 +13,7 @@ router.get('/stats', (req, res) => {
 });
 
 module.exports = router;
+
+
+
+mongodb+srv://sadnagoli_1:3sp0zhMAY0@cluster0.lr7zx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority

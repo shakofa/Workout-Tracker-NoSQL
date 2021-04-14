@@ -13,16 +13,14 @@ const app = express();
 app.use(logger("dev"));
 
 
-//this will use all the html and js files inside the public folder
-app.use(express.static("public"));
-
-
-
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 
-mongoose.connect("mongodb://localhost/workout", {useNewUrlParser: true});
+//this will use all the html and js files inside the public folder
+app.use(express.static("public"));
+
+mongoose.connect("mongodb://localhost/workout", {useNewUrlParser: true, useFindAndModify: false});
 
 
 //routes

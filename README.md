@@ -14,7 +14,7 @@ The user can keep track of his workout by adding the workout type, duration and 
 
  <img src="images\1.png" height= 300 width="400"> <img src="images\2.png" height= 300 width="400">
  <img src="images\3.png" height= 300 width="400"> <img src="images\4.png" height= 300 width="400">
- <img src="images\5.png" height= 300 width="400">
+ <img src="images\5.png" height= 400 width="600">
 
 
  ## Contributors

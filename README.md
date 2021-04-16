@@ -12,11 +12,9 @@ Workout Tracker is an app build with Node.js Express and used Mongodb. The user 
 The user can keep track of his workout by adding the workout type, duration and other details.
 
 
- <img src="images\1.png" height= 200 width="200">
- <img src="images\2.png" height= 200 width="200">
- <img src="images\3.png" height= 200 width="200">
- <img src="images\4.png" height= 200 width="200">
- <img src="images\5.png" height= 200 width="200">
+ <img src="images\1.png" height= 300 width="400"> <img src="images\2.png" height= 300 width="400">
+ <img src="images\3.png" height= 300 width="400"> <img src="images\4.png" height= 300 width="400">
+ <img src="images\5.png" height= 300 width="400">
 
 
  ## Contributors

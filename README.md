@@ -5,7 +5,7 @@ Workout Tracker is an app build with Node.js Express and used Mongodb. The user 
 
 ## Deployed Link
  MongoDB Atlas is used to manage the monogodb data and deploye the app to heroku.
- (Click here!)[https://blooming-peak-46978.herokuapp.com/]
+ [Click here!](https://blooming-peak-46978.herokuapp.com/)
 
 
 ## Usage

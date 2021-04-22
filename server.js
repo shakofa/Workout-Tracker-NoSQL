@@ -18,22 +18,23 @@ app.use(express.json());
 
 
 //this will use all the html and js files inside the public folder
+
 app.use(express.static("public"));
 
 
-mongodb+srv://sadnagoli_1:3sp0zhMAY0@cluster0.lr7zx.mongodb.net/workout?retryWrites=true&w=majority
+ mongodb+srv://sadnagoli_1:3sp0zhMAY0@cluster0.lr7zx.mongodb.net/workout?retryWrites=true&w=majority
 
 mongoose.connect("mongodb://localhost/workout", {useNewUrlParser: true, useFindAndModify: false});
 
-// mongoose.connect(
-//     process.env.MONGODB_URI || 'mongodb://localhost/workout',
-//     {
-//       useNewUrlParser: true,
-//       useUnifiedTopology: true,
-//       useCreateIndex: true,
-//       useFindAndModify: false
-//     }
-//   );
+ mongoose.connect(
+     process.env.MONGODB_URI || 'mongodb://localhost/workout',
+    {
+       useNewUrlParser: true,
+       useUnifiedTopology: true,
+       useCreateIndex: true,
+      useFindAndModify: false
+    }
+  );
 
 
 //routes

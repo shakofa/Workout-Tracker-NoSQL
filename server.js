@@ -23,8 +23,6 @@ app.use(express.static("public"));
 
 
 
-mongodb+srv://sadnagoli_1:3sp0zhMAY0@cluster0.lr7zx.mongodb.net/workout?retryWrites=true&w=majority
-
 mongoose.connect("mongodb://localhost/workout", {useNewUrlParser: true, useFindAndModify: false});
 
  mongoose.connect(

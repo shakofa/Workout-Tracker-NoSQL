@@ -20,7 +20,7 @@ app.use(express.json());
 //this will use all the html and js files inside the public folder
 app.use(express.static("public"));
 
-//mongoose.connect("mongodb://localhost/workout", {useNewUrlParser: true, useFindAndModify: false});
+mongoose.connect("mongodb://localhost/workout", {useNewUrlParser: true, useFindAndModify: false});
 
 mongoose.connect(
     process.env.MONGODB_URI || 'mongodb://localhost/workout',

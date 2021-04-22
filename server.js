@@ -4,7 +4,7 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 
@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 
- mongodb+srv://sadnagoli_1:3sp0zhMAY0@cluster0.lr7zx.mongodb.net/workout?retryWrites=true&w=majority
+
 
 mongoose.connect("mongodb://localhost/workout", {useNewUrlParser: true, useFindAndModify: false});
 
@@ -30,8 +30,8 @@ mongoose.connect("mongodb://localhost/workout", {useNewUrlParser: true, useFindA
      process.env.MONGODB_URI || 'mongodb://localhost/workout',
     {
        useNewUrlParser: true,
-       useUnifiedTopology: true,
-       useCreateIndex: true,
+       //useUnifiedTopology: true,
+       //useCreateIndex: true,
       useFindAndModify: false
     }
   );

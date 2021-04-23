@@ -2,7 +2,7 @@ const express = require("express");
 //const mongojs = require("mongojs");
 const logger = require("morgan");
 const mongoose = require("mongoose");
-
+const router = require("./routes/api.js");
 
 const PORT = process.env.PORT || 3001;
 
@@ -25,7 +25,7 @@ app.use(express.static("public"));
 
 mongoose.connect("mongodb://localhost/workout", {useNewUrlParser: true, useFindAndModify: false});
 
- mongoose.connect(
+ let db = mongoose.connect(
      process.env.MONGODB_URI || 'mongodb://localhost/workout',
     {
        useNewUrlParser: true,
@@ -45,3 +45,5 @@ app.use(require('./routes/view.js'));
 app.listen(PORT, () => {
     console.log(`App is listening to port ${PORT}`);
 });
+
+module.exports = db;

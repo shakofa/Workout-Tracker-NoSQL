@@ -3,6 +3,7 @@ const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
 const router = require("./routes/api.js");
+require("dotenv").config();
 
 const PORT = process.env.PORT || 3001;
 
@@ -23,17 +24,20 @@ app.use(express.static("public"));
 
 
 
-mongoose.connect("mongodb://localhost/workout", {useNewUrlParser: true, useFindAndModify: false});
+//mongoose.connect(process.env.MONGODB_URI, {useNewUrlParser: true, useFindAndModify: false});
 
- let db = mongoose.connect(
+
+  mongoose.connect(
      process.env.MONGODB_URI || 'mongodb://localhost/workout',
     {
        useNewUrlParser: true,
-       //useUnifiedTopology: true,
-       //useCreateIndex: true,
+       useUnifiedTopology: true,
+       useCreateIndex: true,
       useFindAndModify: false
     }
   );
+
+
 
 
 //routes
@@ -46,4 +50,3 @@ app.listen(PORT, () => {
     console.log(`App is listening to port ${PORT}`);
 });
 
-module.exports = db;
